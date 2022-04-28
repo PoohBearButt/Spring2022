@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yantramanav:wght@100;300;400;500;700;900&display=swap');
+
+body {
+    padding: 2.5em 2.5em 2.5em 2.5em;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+header {
+    padding: 2em 2em 2em 2em;
+    background-color: rgb(66, 9, 83);
+    border-radius: 20px;
+    box-shadow: 0 0 0.5em 0.5em rgba(0, 0, 0, 0.5);
+    display: grid;
+}
+
+.inline {
+    display: inline;
+}
+
+#author {
+    grid-column: 1/2;
+    grid-row: 1/4
+}
+
+.name {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    text-align: center;
+    font-size: 45px;
+}
+
+footer {
+    margin: 1em 0 0 0;
+    padding: 1em 1em 1em 1em;
+    background-color: rgb(66, 9, 83);
+    border-radius: 20px;
+    box-shadow: 0 0 0.5em 0.5em rgba(0, 0, 0, 0.5);
+    display: grid;
+    text-align: center;
+}
+
+a {
+    font-family: Oxygen;
+    font-size: 16px;
+}
+
+h1 {
+    font-family: Oxygen;
+    color: rgb(250, 222, 171);
+}
+
+h2 {
+    font-family: Oxygen;
+}
+
+h3 {
+    font-family: Yantramanav;
+}
+
+h4 {
+    font-family: Yantramanav;
+    font-size: 300;
+    color: rgb(250, 222, 171);
+}
+
+h5 {
+    display: inline;
+    font-family: Yantramanav;
+    font-size: 16px;
+}
+
+p {
+    font-family: Yantramanav;
+}
+
+.footnote {
+    font-family: Yantramanav;
+    font-size: 200;
+    font-style: italic;
+}
+
+#lastUpdate {
+    font-family: Yantramanav;
+    font-size: 300;
+    color: rgb(250, 222, 171);
+}
