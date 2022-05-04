@@ -1,0 +1,116 @@
+
+body {
+    display: block;
+    padding: 1em 1em 1em 1em;
+    margin: 0 auto 0 auto;
+    
+}
+
+header {
+    padding: 2em 2em 2em 2em;
+    background-color: rgb(130, 199, 190);
+    /*box-shadow: 0 0 0.5em 0.5em rgba(0, 0, 0, 0.5);*/
+    display: grid;
+  
+}
+main{
+    /*display: block;
+    margin-left: auto;
+    margin-right: auto;*/
+    display:grid;
+    /*grid-template-columns: 1/4;*/
+    justify-content: center;
+    align-items: center;
+}
+
+img{
+    max-width: 350px;
+    padding: 0 1em 0 1em;
+}
+
+a {
+    font-family: Oxygen;
+    font-size: 16px;
+}
+section{
+    max-width: 360px;
+    /*min-width: 330px;*/
+    margin: 2em 2em 2em 2em;
+    /*padding: 0 1em 1em 1em;*/
+    background-color: rgb(223, 223, 223);
+    border-radius: 16px 16px 0 0;
+    display: grid;
+    grid-row: 1/6;
+}
+
+h1, h2{
+    font-family: Oxygen;
+}
+h3, h4, h5, p {
+    font-family: Yantramanav;
+}
+
+a, h3, h4, h5, p {
+    padding: 0 1em 0 1em;
+}
+h1 {
+    color: rgb(85, 22, 74);
+    font-size: 54px;
+}
+
+h2{
+    font-size: 42px;
+}
+h3{
+    font-size: 30px;
+    background-color: rgb(130, 199, 190);
+}
+
+h4 {
+    font-size: 24px;
+}
+
+h5 {
+    display: inline;
+    font-family: Yantramanav;
+    font-size: 18px;
+}
+
+p {
+    /*padding: .5em 1em .5em 1em;*/
+    font-size: 18px;
+}
+
+footer {
+    margin: 1em 0 0 0;
+    padding: 1em 1em 1em 1em;
+    background-color: rgb(130, 199, 190);
+    box-shadow: 0 0 0.5em 0.5em rgba(0, 0, 0, 0.5);
+    display: grid;
+    text-align: center;
+}
+
+#lastUpdate {
+    font-family: Yantramanav;
+    font-size: 300;
+    color: rgb(85, 22, 74);
+}
+
+#subheader{
+    grid-template-rows: 1/2;
+}
+
+@media screen and (min-width: 536px) {
+    main{
+        display: flex;
+        
+        grid-template-columns: 1fr 1fr;
+
+    }
+}
+@media screen and (min-width: 800px) {
+    main{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
