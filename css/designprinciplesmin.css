@@ -1,0 +1,9 @@
+@media only screen (min-width: 760px){
+    main{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+/*tablet size is 760 wide so i need it to flex all the section boxes*/

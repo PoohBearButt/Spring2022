@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+   display: block;
+   padding: 1em 1em 1em 1em;
+   margin: 0 auto 0 auto;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+.flex-main{
+
+}
+
+
+.flex-nav ul {
+    display: flex;
+    flex-direction:column;
+    list-style-type: none;
+    align-items: center;
+}
+
+.flex-nav a {
+    display: block;
+    padding: 0.8rem 1rem;
+    text-decoration: none;
+}
+
+.flex-nav a:hover{
+    background-color: black;
+    color: orange;
+}
+
+/*another way instead of justify in the first media query*/
+/*.flex-nav li {
+    flex: 1 1 auto;
+}
+.flex-nave li:first-child{
+    flex: 2 1 auto; 
+}*/
+
+.flex-main{
+    max-width:300px;
+}
+.flex-main section img{
+    box-shadow: 0 0 30px blanchedalmond;
+}
+
+header{
+    background-color: orange;
+    text-align: center;
+
+}
+
+footer{
+    background-color: orange;
+    margin: auto;
+    padding: 1em 1em 1em 1em;
+    text-align: center;
+}
+
+@media screen and (min-width: 46rem) {
+    .flex-nav ul{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .flex-main {
+        flex-direction: row;
+    }
+}
+@media screen and (min-width: 700rem){
+    .flex-main {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
