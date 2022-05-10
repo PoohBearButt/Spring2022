@@ -1,0 +1,108 @@
+/*color{
+    color: #fcfcfc;
+}*/
+
+/*get things to display in the same line
+display:inline; ----> make sure to set up a class or id*/
+
+body {
+    padding: 2.5em 2.5em 2.5em 2.5em;
+    max-width: 800px;
+    margin: 0 auto;
+}
+nav{
+    font-family: Raleway;
+    padding: 1em 1em 1em 1em; 
+    align-content: center;
+    background-color: #f4e040;
+}
+nav a:hover{
+    background-color: #042a2b;
+    color:#f4e040;
+    padding: 5px 5px 5px 5px;
+}
+ul{
+    list-style-type: none;
+    padding-left: 0;
+}
+a{
+    
+}
+li{
+    padding: 5px 5px 5px 5px;
+    text-align: center;
+}
+
+header{
+    background-color: #5eb1bf;
+    padding: 2em 2em 2em 2em;
+    color: #f4e040;
+}
+main{
+    padding: 2em 2em 2em 2em;
+}
+
+h1, h2 {
+    font-family: Libre Franklin;
+}
+
+h3, h4, p{
+    font-family: Raleway;
+}
+
+h1{
+    font-size: 2em;
+}
+
+h2{
+    font-size: 30px;
+}
+h3{
+    font-size: 20px;
+}
+h4{
+    font-size: 14px;
+}
+.bold{
+    font-weight: bold;
+}
+.inline{
+    display: inline;
+}
+.center{
+    text-align: center;
+}
+
+
+footer {
+    background-color: #042a2b;
+    padding: 1em 1em 1em 1em;
+    text-align: center;
+    color: #f4e040;
+}
+
+@media screen and (min-width: 750px){
+    /*nav{
+        align-content: center;
+    }*/
+    ul{
+        display: flex;
+        flex-direction: row;
+        /*grid-template-columns: 1fr 1fr 1fr 1fr 1fr;*/
+        align-content: center;
+    }
+    nav a {
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-width: 1250px){
+    ul{
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+    }
+    nav a {
+        font-size: 20px;
+    }
+}
