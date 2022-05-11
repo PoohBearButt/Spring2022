@@ -12,7 +12,6 @@ body {
 }
 nav{
     font-family: Raleway;
-    padding: 1em 1em 1em 1em; 
     align-content: center;
     background-color: #f4e040;
 }
@@ -25,9 +24,7 @@ ul{
     list-style-type: none;
     padding-left: 0;
 }
-a{
-    
-}
+
 li{
     padding: 5px 5px 5px 5px;
     text-align: center;
@@ -87,20 +84,26 @@ footer {
     }*/
     ul{
         display: flex;
-        flex-direction: row;
-        /*grid-template-columns: 1fr 1fr 1fr 1fr 1fr;*/
-        align-content: center;
+        justify-content: space-around;
     }
     nav a {
         font-size: 20px;
+    }
+    .headstraight{
+        display: flex;
+        flex-direction: row;
+    }
+    .name{
+        display: flex; 
+        align-items: center;
+        justify-content: center;
     }
 }
 
 @media screen and (min-width: 1250px){
     ul{
         display: flex;
-        flex-direction: row;
-        align-content: center;
+        justify-content: space-around;
     }
     nav a {
         font-size: 20px;

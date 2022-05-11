@@ -12,7 +12,6 @@ body {
 }
 nav{
     font-family: Raleway;
-    padding: 1em 1em 1em 1em; 
     align-content: center;
     background-color: #f4e040;
 }
@@ -25,9 +24,7 @@ ul{
     list-style-type: none;
     padding-left: 0;
 }
-a{
-    
-}
+
 li{
     padding: 5px 5px 5px 5px;
     text-align: center;
@@ -43,7 +40,7 @@ main{
 }
 
 h1, h2 {
-    font-family: Libre Franklin;
+    font-family: Jose Fine;
 }
 
 h3, h4, p{
@@ -83,6 +80,110 @@ p{
     font-family: Libre Franklin;
 }
 
+.center{
+    text-align: center;
+}
+
+.grid{
+    display: flex; 
+    /*flex-direction: column;*/
+    justify-content: space-between;
+    flex-wrap: wrap;    
+    align-items: baseline;
+}
+
+/*.grid{
+    display: grid;
+    grid-column: 1/6;
+    grid-row: 1/6;
+    column-gap: 1em;
+    row-gap: 2em;
+}*/
+
+.bodytext{
+    flex-direction: column;
+    /*grid-column: 1/2;
+    grid-row: 1/6;
+    column-gap: 1em;
+    row-gap: 30px;*/
+}
+.fonts{
+    flex-direction: column;
+    /*grid-column: 2/3;
+    grid-row: 1/6;
+    column-gap: 1em;
+    row-gap: 30px;*/
+}
+.size{
+    flex-direction: column;
+    /*grid-column: 3/4;
+    grid-row: 1/6;
+    column-gap: 1em;
+    row-gap: 30px;*/
+}
+.colours{
+    flex-direction: column;
+    /*grid-column: 4/5;
+    grid-row: 1/6;
+    column-gap: 1em;
+    row-gap: 30px;*/
+}
+
+
+.siteheader{
+    font-family: Noto Serif;
+    font-size: 45px;
+    margin: 0 0 0 0;
+    color: #568bbf;
+    background-color: #053834;
+}
+.sitenavtop{
+    font-family: Libre Franklin;
+    font-size: 30px;
+    margin: 0 0 0 0;
+    color: #053834;
+    background-color: #28a857;
+}
+.sitenavbot{
+    font-family: Libre Franklin;
+    font-size: 20px;
+    margin: 0 0 0 0;
+    color: #053834;
+    background-color: #28a857;
+}
+.h1{
+    font-family: Noto Serif;
+    font-size: 35px;
+    margin: 0 0 0 0;
+    background-color: ;
+    color: #126578;
+}
+.h2{
+    font-family: Noto Serif;
+    font-size: 25px;
+    margin: 0 0 0 0;
+    color:#126578;
+}
+.h3{
+    font-family: Noto Serif;
+    font-size: 18px;
+    margin: 0 0 0 0;
+    color: #126578;
+}
+.p{
+    font-family: Libre Franklin;
+    font-size: 13px;
+    margin: 0 0 0 0;
+    color: #053834;
+}
+.nopadding{
+    padding: 0 0 0 0;
+    flex-direction: column;
+    /*grid-column: 5/6;
+    grid-row: 1/6;
+    column-gap: 1em;
+    row-gap: 2em;*/
+}
 footer {
     background-color: #042a2b;
     padding: 1em 1em 1em 1em;
@@ -96,20 +197,26 @@ footer {
     }*/
     ul{
         display: flex;
-        flex-direction: row;
-        /*grid-template-columns: 1fr 1fr 1fr 1fr 1fr;*/
-        align-content: center;
+        justify-content: space-around;
     }
     nav a {
         font-size: 20px;
+    }
+    .headstraight{
+        display: flex;
+        flex-direction: row;
+    }
+    .name{
+        display: flex; 
+        align-items: center;
+        justify-content: center;
     }
 }
 
 @media screen and (min-width: 1250px){
     ul{
         display: flex;
-        flex-direction: row;
-        align-content: center;
+        justify-content: space-around;
     }
     nav a {
         font-size: 20px;
