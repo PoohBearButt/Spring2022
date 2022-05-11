@@ -10,67 +10,79 @@ body {
     max-width: 800px;
     margin: 0 auto;
 }
-nav{
+
+nav {
     font-family: Raleway;
     align-content: center;
     background-color: #f4e040;
 }
-nav a:hover{
+
+nav a:hover {
     background-color: #042a2b;
-    color:#f4e040;
+    color: #f4e040;
     padding: 5px 5px 5px 5px;
 }
-ul{
+
+ul {
     list-style-type: none;
     padding-left: 0;
 }
 
-li{
+li {
     padding: 5px 5px 5px 5px;
     text-align: center;
 }
 
-header{
+header {
     background-color: #5eb1bf;
     padding: 2em 2em 2em 2em;
     color: #f4e040;
 }
-main{
+
+main {
     padding: 2em 2em 2em 2em;
 }
 
-h1, h2 {
+h1,
+h2 {
     font-family: Jose Fine;
 }
 
-h3, h4, p{
+h3,
+h4,
+p {
     font-family: Raleway;
 }
 
-h1{
+h1 {
     font-size: 2em;
 }
 
-h2{
+h2 {
     font-size: 30px;
 }
-h3{
+
+h3 {
     font-size: 20px;
 }
-h4{
+
+h4 {
     font-size: 14px;
 }
-.bold{
+
+.bold {
     font-weight: bold;
 }
-.inline{
+
+.inline {
     display: inline;
 }
-.center{
+
+.center {
     text-align: center;
 }
 
-.colorblock{
+.colorblock {
     color: white;
     display: flex;
     justify-content: space-around;
@@ -78,32 +90,36 @@ h4{
     align-content: center;
 }
 
-#uses{
+#uses {
     color: white;
 }
 
-.one{
+.one {
     background-color: #053834;
     padding: 1em 1em 1em 1em;
 }
-.two{
+
+.two {
     background-color: #28a857;
     padding: 1em 1em 1em 1em;
 }
-.three{
+
+.three {
     background-color: #58b8a6;
     padding: 1em 1em 1em 1em;
 }
-.four{
+
+.four {
     background-color: #568bbf;
     padding: 1em 1em 1em 1em;
 }
-.five{
+
+.five {
     background-color: #126578;
     padding: 1em 1em 1em 1em;
 }
 
-.center{
+.center {
     text-align: center;
 }
 
@@ -115,33 +131,38 @@ footer {
     color: #f4e040;
 }
 
-@media screen and (min-width: 750px){
+@media screen and (min-width: 750px) {
+
     /*nav{
         align-content: center;
     }*/
-    ul{
+    ul {
         display: flex;
         justify-content: space-around;
     }
+
     nav a {
         font-size: 20px;
     }
-    .headstraight{
+
+    .headstraight {
         display: flex;
         flex-direction: row;
     }
-    .name{
-        display: flex; 
+
+    .name {
+        display: flex;
         align-items: center;
         justify-content: center;
     }
 }
 
-@media screen and (min-width: 1250px){
-    ul{
+@media screen and (min-width: 1250px) {
+    ul {
         display: flex;
         justify-content: space-around;
     }
+
     nav a {
         font-size: 20px;
     }
