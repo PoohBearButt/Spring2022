@@ -1,39 +1,48 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     font-family: "Noto Serif";
 }
-h4, p, nav {
+
+h4,
+p,
+nav {
     font-family: "Libre Franklin";
 }
-h1{
+
+h1 {
     font-size: 35px;
 }
-h2{
+
+h2 {
     font-size: 25px;
 }
-h3{
+
+h3 {
     font-size: 18px;
 }
-h4{
+
+h4 {
     font-size: 16px;
     font-weight: bolder;
 }
 
-p{
+p {
     font-size: 13px;
 }
 
-body{
+body {
     max-width: 1000px;
-    margin: 0 auto; 
+    margin: 0 auto;
     padding: 1.5em 1.5em 1.5em 1.5em;
 }
 
-header{
+header {
     max-height: 150px;
     min-height: auto;
     padding: 10px 10px 10px 10px;
@@ -46,41 +55,47 @@ header{
     flex-wrap: wrap;
     justify-content: space-between;*/
 }
-#sitelogo{
+
+#sitelogo {
     grid-column: 1/2;
     grid-row: 1/2;
 }
-#siteheader{
+
+#siteheader {
     display: flex;
     flex-wrap: wrap;
     grid-column: 2/3;
     grid-row: 1/2;
 }
-#siteicons{
+
+#siteicons {
     display: flex;
     justify-content: right;
     grid-column: 3/4;
     grid-row: 1/2;
 }
-#sitenavend{
+
+#sitenavend {
     margin: 0 0 0 0;
     padding: 0 0 0 0;
     justify-content: right;
     grid-column: 4/5;
     grid-row: 1/2;
 }
-#headdate{
+
+#headdate {
     /*text-align: center;*/
     display: flex;
     justify-content: center;
     grid-column: 1/5;
     grid-row: 2/3;
 }
-img{
+
+img {
     display: block;
 }
 
-img.logo{
+img.logo {
     display: block;
     min-width: 50px;
     max-width: 230px;
@@ -88,14 +103,16 @@ img.logo{
     /*margin-left: auto;
     margin-right: auto; */
 }
-img.link{
+
+img.link {
     min-width: none;
     max-width: 80px;
 }
 
 
-nav button{
-    margin: 0 0 0 0 ; /*this needs to fix the block color*/
+nav button {
+    margin: 0 0 0 0;
+    /*this needs to fix the block color*/
     background: transparent;
     border: none;
     font-size: 2rem;
@@ -103,20 +120,21 @@ nav button{
     font-family: "Libre Franklin";
 }
 
-nav{
+nav {
     font-size: 18px;
     color: #58b8a6;
     /*background-color: #28a857;*/
     text-align: center;
 }
 
-nav ul{
+nav ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
 }
+
 /*how to make the following only work when in small view, set another in medium to cancel this*/
-nav ul.headeronly{
+nav ul.headeronly {
     display: none;
 }
 
@@ -125,7 +143,7 @@ nav ul.open {
     background-color: #28a857;
 }
 
-nav ul li a{
+nav ul li a {
     display: block;
     padding: .8rem 2vw;
     text-decoration: none;
@@ -134,22 +152,24 @@ nav ul li a{
 }
 
 /*specify the child and also the class assigned to it*/
-nav ul li.active a{
-    background-color: rgba(0,0,0,0.2);
+nav ul li.active a {
+    background-color: rgba(0, 0, 0, 0.2);
     color: #fff;
 }
 
-nav ul li a:hover{
-    background-color: rgba(0,0,0,0.3);
+nav ul li a:hover {
+    background-color: rgba(0, 0, 0, 0.3);
     /*This is not working as intended*/
 }
 
-nav a :hover{
+nav a :hover {
     background-color: #126578;
     color: white;
     padding: 2em 2em 2em 2em;
-} /*what is this with nav ul li a:hover, not working as intended*/
-.responsive li{
+}
+
+/*what is this with nav ul li a:hover, not working as intended*/
+.responsive li {
     display: block;
 }
 
@@ -159,7 +179,7 @@ nav a :hover{
 }*/
 
 main {
-    display: felx; 
+    display: felx;
     flex-direction: column;
     gap: 20px;
 }
@@ -171,7 +191,7 @@ main {
     gap: 10px;
 }*/
 
-nav ul li a.map{
+nav ul li a.map {
     font-size: small;
     font-weight: bolder;
     display: block;
@@ -180,7 +200,7 @@ nav ul li a.map{
     color: #568bbf;
 }
 
-footer{
+footer {
     background-color: #053834;
     color: #58b8a6;
     padding: 5px 20px 5px 20px;
@@ -189,27 +209,37 @@ footer{
     align-items: center;
 }
 
+#lastUpdate {
+    font-family: Libre Franklin;
+}
 
-.siteheader{
+#lastModified {
+    font-family: Libre Franklin;
+}
+
+.siteheader {
     font-size: 20px;
     /*display: flex;
     flex-direction: row;*/
 }
-.siteheader2{
+
+.siteheader2 {
     font-size: 15px;
 }
-.dateheader{
+
+.dateheader {
     align-items: flex-end;
 }
+
 .center {
     text-align: center;
 }
 
-.color1{
+.color1 {
     color: #568bbf;
 }
 
-.itembox{
+.itembox {
     display: block;
     background-color: gray;
     margin: 1em 1em 1em 1em;
@@ -217,12 +247,12 @@ footer{
     border: #e1e1e1e1;
 }
 
-.footername{
+.footername {
     font-weight: bolder;
     font-size: 15px;
 }
 
-.hidden{
+.hidden {
     display: none;
 }
 
@@ -233,8 +263,18 @@ footer{
 }*/
 
 
-#hamburgerBtn span:nth-child(1) {display: block;}
-#hamburgerBtn span:nth-child(2){display: none;}
+#hamburgerBtn span:nth-child(1) {
+    display: block;
+}
 
-#hamburgerBtn.open span:nth-child(1) {display: none;}
-#hamburgerBtn.open span:nth-child(2){display: block;}
+#hamburgerBtn span:nth-child(2) {
+    display: none;
+}
+
+#hamburgerBtn.open span:nth-child(1) {
+    display: none;
+}
+
+#hamburgerBtn.open span:nth-child(2) {
+    display: block;
+}
