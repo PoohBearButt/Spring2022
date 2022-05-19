@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bikini Bottom Chamber of Commerce Webpage</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Serif:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <!--<link rel="stylesheet" href="css/newbase.css">-->
+    <link rel=""
+</head>
+<body>
+    <header>
+        <img class="logo" src="images/signsmall.png" alt="Logo picture of Bikini Bottom Chamber of Commerce" width="30ref" height="auto">
+        <span id="siteheader">
+            <h1 class="siteheader">Bikini Bottom</h1>
+            <h2 class="siteheader2">Chamber of Commerce</h2>
+        </span>
+        <br>
+        <span id="siteicons">
+            <a href="https://twitter.com/">
+            <img class="link" src="images/twitter100.png" alt="Icon and link for the twitter page" width="30px" height="auto"></a>
+            <br>
+            <a href="https://instagram.com/">
+            <img class="link" src="images/instagram100.png" alt="Icon and link for the instagram page" width="30px" height="auto"></a>
+        </span>
+        <br>
+        
+        <nav id="sitenavend">
+            <button id="hamburgerBtn" onclick="toggleMenu()"><span> &#9776; </span><span> x </span></button><!--is this supposed to be mixed with the menu?-->
+            <ul id="primaryNav" class="headeronly navigation"> <!-- this level is important it controls the display of the menu, must refer to the first child, button?-->
+                <li><a class="navigation" href="">Menu</a>
+                </li> 
+                <li><a class="active" href="">Discover</a>
+                </li>
+                <li><a class="active" href="">Directory</a>
+                </li>
+                <li><a class="active" href="">Join</a>
+                </li>
+                <li><a class="active" href="">Contact</a>
+                </li>
+            </ul>
+        </nav>
+        <h4 id="headdate" class="dateheader color1">Thursday, 12 May 2022</h4> <!--should include a code that will grab the current day for this sight-->
+
+    </header>
+
+
+    <main>
+        <section class="itembox hero column2hero" id="column2">
+            <p class="itembox">Hero with site name and call to action</p>
+        </section>
+        <section class="join row3" id="column1">
+            <p class="itembox hidden reveal">Join</p>
+        </section>
+        <section class="event row1" id="column1">
+            <p class="itembox">Event</p>
+        </section>
+        <section class="weather row2" id="column1">
+            <p class="itembox">Weather</p>
+        </section>       
+        <section class="news column2news" id="column2">
+            <p class="itembox">News Release</p>
+        </section>
+        <section class="itembox spotlight column3" id="column3">
+            <p class="itembox">Spotlight 1</p>
+            <p class="itembox">spotlight 2</p>
+            <p class="itembox hidden">Spotlight 3</p> <!--need to turn on hidden-->
+        </section>
+    </main>
+
+    <footer>
+        <img src="images/signsmall.png" alt="Logo picture of Bikini Bottom Chamber of Commerce" width="70
+        px" height="auto">
+        <h4 class="center">Bikini Bottom Chamber of Commerce</h4>
+        <p class="center">124 Conch Street, Bikini Bottom, Marshall Islands 96970</p>
+        <br>
+        <h5>info@bbchamber.org</h5>
+        <h5> +1 234 567 890 </h5>
+
+        
+        <nav class="map">
+            <ul>
+                <li><a class="map" href="https://goo.gl/maps/QX4HJPGSJEKPGCcQ6"> &#128205; Location Map</a>
+                </li>
+            </ul>
+        </nav>
+
+        <br>
+        <p>&#169; Bikini Bottom Chamber</p>
+        <p class="footername">Elisha Wong</p>
+        <h5>WDD 230 Project</h5>
+        <p>Last Updated: 17 May 2022</p>
+    </footer>
+<script src="js/base.js"></script>
+</body>
+</html>

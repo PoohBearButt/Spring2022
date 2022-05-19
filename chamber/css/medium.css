@@ -1,0 +1,58 @@
+@media only screen and (min-width:750px) {
+    /*nav button {
+        display: none;
+    }*/
+
+    nav ul{
+        display: flex;
+    }
+
+    nav ul #primaryNav{
+        display: flex;
+        /*justify-content: flex-start;*/
+        margin-left: 2vw;
+        border-left: 1px solid rgba(0,0,0,0.3);
+    }
+    nav ul li a {
+        border: none;
+        border-right: 1px solid rgba(0,0,0,0.3);
+    }
+    main {
+        display: grid;
+        /*grid-template-columns: 1em 1em 1em;
+        grid-template-rows: 1em 1em 1em 1em 1em 1em;*/
+    }
+
+    .reveal{
+        display: contents;
+        display: block;
+    }
+
+    section.hero{
+        grid-column: 1/4;
+        grid-row: 1/2;
+    }
+    section.join{
+        grid-column: 1/4;
+        grid-row: 4/5;
+    }
+    section.news{
+        grid-column: 1/4;
+        grid-row: 2/3;
+    }
+
+    section.spotlight{
+        grid-column: 1/4;
+        grid-row: 3/4;
+    }
+    section.weather{
+        grid-column: 3/4;
+        grid-row: 5/6;
+    }
+    section.event{
+        grid-column: 1/3;
+        grid-row: 5/6;
+    }
+}
+
+/*removed primaryNav from both this nav ul and the ul class section on html */

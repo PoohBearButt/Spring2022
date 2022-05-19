@@ -1,0 +1,240 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3 {
+    font-family: "Noto Serif";
+}
+h4, p, nav {
+    font-family: "Libre Franklin";
+}
+h1{
+    font-size: 35px;
+}
+h2{
+    font-size: 25px;
+}
+h3{
+    font-size: 18px;
+}
+h4{
+    font-size: 16px;
+    font-weight: bolder;
+}
+
+p{
+    font-size: 13px;
+}
+
+body{
+    max-width: 1000px;
+    margin: 0 auto; 
+    padding: 1.5em 1.5em 1.5em 1.5em;
+}
+
+header{
+    max-height: 150px;
+    min-height: auto;
+    padding: 10px 10px 10px 10px;
+    background-color: #053834;
+    color: #58b8a6;
+    display: grid;
+    grid-template-columns: 60px 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    /*display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;*/
+}
+#sitelogo{
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+#siteheader{
+    display: flex;
+    flex-wrap: wrap;
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+#siteicons{
+    display: flex;
+    justify-content: right;
+    grid-column: 3/4;
+    grid-row: 1/2;
+}
+#sitenavend{
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    justify-content: right;
+    grid-column: 4/5;
+    grid-row: 1/2;
+}
+#headdate{
+    /*text-align: center;*/
+    display: flex;
+    justify-content: center;
+    grid-column: 1/5;
+    grid-row: 2/3;
+}
+img{
+    display: block;
+}
+
+img.logo{
+    display: block;
+    min-width: 50px;
+    max-width: 230px;
+    min-height: auto;
+    /*margin-left: auto;
+    margin-right: auto; */
+}
+img.link{
+    min-width: none;
+    max-width: 80px;
+}
+
+
+nav button{
+    margin: 0 0 0 0 ; /*this needs to fix the block color*/
+    background: transparent;
+    border: none;
+    font-size: 2rem;
+    color: #58b8a6;
+    font-family: "Libre Franklin";
+}
+
+nav{
+    font-size: 18px;
+    color: #58b8a6;
+    /*background-color: #28a857;*/
+    text-align: center;
+}
+
+nav ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+/*how to make the following only work when in small view, set another in medium to cancel this*/
+nav ul.headeronly{
+    display: none;
+}
+
+nav ul.open {
+    display: block;
+    background-color: #28a857;
+}
+
+nav ul li a{
+    display: block;
+    padding: .8rem 2vw;
+    text-decoration: none;
+    color: #053834;
+    /*border-top: 1px solid rgb(0,0,0,0.5);*/
+}
+
+/*specify the child and also the class assigned to it*/
+nav ul li.active a{
+    background-color: rgba(0,0,0,0.2);
+    color: #fff;
+}
+
+nav ul li a:hover{
+    background-color: rgba(0,0,0,0.3);
+    /*This is not working as intended*/
+}
+
+nav a :hover{
+    background-color: #126578;
+    color: white;
+    padding: 2em 2em 2em 2em;
+} /*what is this with nav ul li a:hover, not working as intended*/
+.responsive li{
+    display: block;
+}
+
+
+/*ul{
+    list-style-type: none;
+}*/
+
+main {
+    display: felx; 
+    flex-direction: column;
+    gap: 20px;
+}
+
+/*main{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 200px 200px 200px 200px 200px 200px;
+    gap: 10px;
+}*/
+
+nav ul li a.map{
+    font-size: small;
+    font-weight: bolder;
+    display: block;
+    border: none;
+    background-color: #053834;
+    color: #568bbf;
+}
+
+footer{
+    background-color: #053834;
+    color: #58b8a6;
+    padding: 5px 20px 5px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.siteheader{
+    font-size: 20px;
+    /*display: flex;
+    flex-direction: row;*/
+}
+.siteheader2{
+    font-size: 15px;
+}
+.dateheader{
+    align-items: flex-end;
+}
+.center {
+    text-align: center;
+}
+
+.color1{
+    color: #568bbf;
+}
+
+.itembox{
+    display: block;
+    background-color: gray;
+    margin: 1em 1em 1em 1em;
+    padding: .5em .5em .5em .5em;
+    border: #e1e1e1e1;
+}
+
+.footername{
+    font-weight: bolder;
+    font-size: 15px;
+}
+
+.hidden{
+    display: none;
+}
+
+/*@media only screen and (min-width: 32.5em) {
+    .navigationBar{
+        display: flex;
+    }
+}*/
+
+
+#hamburgerBtn span:nth-child(1) {display: block;}
+#hamburgerBtn span:nth-child(2){display: none;}
+
+#hamburgerBtn.open span:nth-child(1) {display: none;}
+#hamburgerBtn.open span:nth-child(2){display: block;}
